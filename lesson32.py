@@ -1,5 +1,6 @@
 """
-Create a software that asks the user to enter an integer and inform if this number is even or odd. If the user does not enter a number integer, report that it is not an integer.
+Create a software that asks the user to enter an integer and inform if this number is even or odd. 
+If the user does not enter a number integer, report that it is not an integer.
 """
 number = input('Please type in the number of your choice: ')
 try:
@@ -25,8 +26,8 @@ else:
     print('This is not a valid number.')
 
 """
-Create a software that asks the user for the time and displays the appropriate salutation based on the time described. Ex.
-Good morning 0-11, Good afternoon 12-17 and Good evening 18-23.
+Create a software that asks the user for the time and displays the appropriate salutation based on the time described. 
+Ex. Good morning 0-11, Good afternoon 12-17 and Good evening 18-23.
 """
 time = int(input('Please enter the current time: '))
 try:
@@ -44,7 +45,10 @@ except:
 # The teacher's resolution was the same as mine.
 
 """
-Create a software that asks for the user's first name. If the name has 4 letters or minus, write "You have a short name"; if it has between 5 and 6 letters, write "You have a normal name"; greater than 6, write "Your name is too long."
+Create a software that asks for the user's first name. 
+If the name has 4 letters or minus, write "You have a short name"; 
+if it has between 5 and 6 letters, write "You have a normal name"; 
+else greater than 6, write "Your name is too long."
 """
 name = str(input('Please enter your first name: '))
 name_size = len(name)
