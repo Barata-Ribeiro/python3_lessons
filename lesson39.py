@@ -6,10 +6,10 @@ name = "Barata Ribeiro"  # Iterable
 str_size = len(name)
 new_str = ''
 
-index = 0  # Index is 0
-while index < str_size:  # Loop through string while
-    # index is less than str_size
-    # Set the letter to be name through index
+index = 0  # Index starts at 0
+# Loops through the string while index is less than str_size
+while index < str_size:
+    # Set the letter to the one index points to in 'name'
     letter = name[index]
     # Put the letter in a new string with the * symbol
     new_str += ('*' + letter)  # Teachers says you can use f'*{name}
@@ -20,8 +20,8 @@ new_str += '*'  # Only to add the last * symbol
 print(new_str)
 
 """
-I've forgot the damn 'index' and had
-to ask ChatGPT for some help...
+I forgot the damn 'index' 
+and had to ask ChatGPT for help...
 Added some additional codes and info 
 with the teacher's resolution.
 """
