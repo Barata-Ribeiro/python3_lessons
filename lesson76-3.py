@@ -46,7 +46,10 @@ person_deepcopy = copy.deepcopy(person)
 print(f'This is a deep copy of "person": {person_deepcopy}')
 print()
 
-print(person.get('name'))  # John
+# Returns msg if the key doesn't exist
+print(person.get('favoriteColor', "Doesn't exist"))
+print()
+
 print(person.pop('name'))  # John
 print(person)  # {'age': 25, 'height': 1.84}
 print()
@@ -55,5 +58,7 @@ print(person.popitem())  # ('height', 1.84)
 print(person)  # {'age': 25}
 print()
 
-person.update({'name': 'Jane', 'age': 30})
-print(person)  # {'name': 'Jane', 'age': 30}
+new_tuple = ('name', 'Jane'), ('age', 30), ('favoriteColor', 'blue')
+new_list = [['name', 'Jane'], ['age', 30], ['favoriteColor', 'blue']]
+person.update(new_tuple)  # or new_list
+print(person)  # {'name': 'Jane', 'age': 30, 'favoriteColor': 'blue'}
