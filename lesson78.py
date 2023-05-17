@@ -42,8 +42,21 @@ s4.update('Jason')
 s4.discard('Hello World')
 print(s4)
 
+print('----------------')
 # Useful operators:
 # union | (union) - Joins sets
 # intersection & (intersection) - Items present in both sets
 # difference - Items present only in the left set
 # symmetric difference ^ - Items that are not present in both sets
+s5 = {1, 2, 3, 4, 5}
+s6 = {2, 4, 3, 5, 6, 7}
+s7 = s5 | s6
+s8 = s5 & s6
+s9 = s5 - s6
+s10 = s5 ^ s6
+
+
+print(s7)  # {1, 2, 3, 4, 5, 6, 7}
+print(s8)  # {2, 3, 4, 5}
+print(s9)  # {1}
+print(s10)  # {1, 6, 7}
