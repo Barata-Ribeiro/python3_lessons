@@ -33,6 +33,14 @@ for number in s3:
 print('----------------')
 # Useful methods:
 # add, update, clear, discard
+s4 = set()
+s4.add(1)
+s4.add(2)
+s4.update((3, 4, 'Hello World'))
+s4.update('Jason')
+# s4.clear()  # Clears the set completely
+s4.discard('Hello World')
+print(s4)
 
 # Useful operators:
 # union | (union) - Joins sets
