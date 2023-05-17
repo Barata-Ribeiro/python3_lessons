@@ -13,13 +13,24 @@ s2 = {'Helen'}  # With data
 print(s1, type(s1))  # <class'set'>
 print(s2)
 
+print('----------------')
 # Sets are efficient for removing duplicate values from iterables.
 # - They do not accept mutable values;
 # - Their values will always be unique;
 # - They do not have indexes;
 # - They do not guarantee order;
 # - They are iterable (for, in, not in)
+l1 = [1, 2, 3, 3, 3, 3, 3, 4, 4, 4, 5, 6, 1]
+s3 = set(l1)
+l2 = list(s3)
+print(l2)
+print(4 in s3)  # True
+print(2 not in s3)  # False
 
+for number in s3:
+    print(number)
+
+print('----------------')
 # Useful methods:
 # add, update, clear, discard
 
